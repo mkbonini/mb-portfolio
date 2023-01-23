@@ -12,8 +12,42 @@ const Main = styled.div`
 	color: white;
 `;
 
+const ProjectContainer = styled.div`
+	width: 40vw;
+	height: 10vh;
+	background-color: white;
+	ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		color: slategray;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		li {
+			padding: 10px;
+			&:hover {
+				background-color: whitesmoke;
+			}
+		}
+	}
+`;
+
 function Projects() {
-	return <Main>Projects</Main>;
+	return (
+		<Main>
+			<ProjectContainer>
+				<ul>
+					<li>Personal</li>
+					<li>3D Printing</li>
+					<li>School</li>
+					<li>Work</li>
+				</ul>
+			</ProjectContainer>
+		</Main>
+	);
 }
 
 export default Projects;

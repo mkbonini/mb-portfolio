@@ -11,7 +11,28 @@ const NavBody = styled.div`
 	display: block;
 	display: flex;
 	justify-content: space-between;
-	height: 65px;
+	height: 80px;
+	h4 {
+			font-family: Sen;
+			font-size: 50px;
+			font-weight: 400;
+			line-height: 60px;
+			letter-spacing: 0em;
+			text-align: left;
+
+			margin: 0;
+			padding: 10px 0px 0px 56px; 
+
+		}
+	h5 {
+		font-family: Raleway;
+		font-size: 30px;
+		font-weight: 500;
+		line-height: 35px;
+		letter-spacing: 0em;
+		text-align: center;
+
+	}
 	ul {
 		display: flex;
 		justify-content: flex-end;
@@ -36,7 +57,6 @@ const NavBody = styled.div`
 	}
 	a {
 		text-decoration: none;
-		color: darkslategray;
 	}
 	@media only screen and (max-width: 900px) {
 		display: none;
@@ -54,6 +74,7 @@ const MobileNav = styled.div`
 			padding: 20px;
 			font-size: 25px;
 		}
+		
 		ul {
 			display: flex;
 			justify-content: flex-start;
@@ -72,7 +93,6 @@ const MobileNav = styled.div`
 		}
 		a {
 			text-decoration: none;
-			color: darkslategray;
 		}
 	}
 `;
@@ -140,22 +160,25 @@ const Navbar = () => {
 				)}
 			</MobileNav>
 			<NavBody>
+				<div className='initials'>
+					<h4>MB</h4>
+				</div>
 				<ul>
-					<li onClick={() => history.push('/')}>
-						<Link to='/'>Home</Link>
+					<li >
+						<h5>Projects</h5>
 					</li>
-					<li onClick={() => history.push('/projects')}>
-						<Link to='/projects'>Projects</Link>
+					<li>
+						<h5>About</h5>
 					</li>
-					<li onClick={() => history.push('/resume')}>
-						<Link to='/resume'>Resume</Link>
+					<li>
+						<h5>Resume</h5>
 					</li>
-					<li onClick={() => history.push('/contact')}>
-						<Link to='/contact'>Contact</Link>
+					<li >
+						<h5>Contact</h5>
 					</li>
 				</ul>
 			</NavBody>
-			<Switch>
+			{/* <Switch>
 				<Route exact path='/'>
 					<Home />
 				</Route>
@@ -168,7 +191,7 @@ const Navbar = () => {
 				<Route path='/contact'>
 					<Contact />
 				</Route>
-			</Switch>
+			</Switch> */}
 		</>
 	);
 };

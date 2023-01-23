@@ -24,7 +24,7 @@ function Resume() {
 				title='mikes-resume'
 				src={PDF}
 				width='70%'
-				height='500px'
+				height='85%'
 			></iframe>
 		</Main>
 	);
