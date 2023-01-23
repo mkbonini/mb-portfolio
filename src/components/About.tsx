@@ -8,7 +8,7 @@ const AboutBody = styled.div`
   /* flex-direction: column */
 	justify-content: center;
   margin-top: 14vh;
-  margin-bottom: 10vh;
+  /* margin-bottom: 10vh; */
   /* width: 80vw */
   
   #about {
@@ -33,7 +33,14 @@ const AboutBody = styled.div`
     }
 	
   @media screen and (max-width: 600px) {
-    
+    margin-top: 10vh;
+    h3 {
+      font-size: 22px;
+    }
+
+    .aboutText {
+      font-size: 16px;
+    }
   }
 `;
 

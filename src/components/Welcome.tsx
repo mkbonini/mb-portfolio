@@ -63,10 +63,8 @@ const WelcomeBody = styled.div`
     margin-top: 10vh;
 
     .imageSide {
-      visibility: hidden;
-      width: 0%;
+      display: none;
     }
-
     .intro {
       width: 100%;
       padding-left: 20px;
