@@ -6,34 +6,38 @@ import myPicture from '../assets/michael.png'
 const WelcomeBody = styled.div`
 	display: block;
 	display: flex;
-	justify-content: center;
-  margin-top: 20vh;
-  margin-bottom: 10vh;
+	justify-content: space-evenly;
+  margin-top: 25vh;
+  /* margin-bottom: 10vh; */
 	/* height: 80px; */
   .intro {
     width: 40vw;
   }
+  .imageSide {
+    width: 30vw;
+  }
+
 	h1 {
 			font-family: Raleway;
-			font-size: 90px;
-			font-weight: 700;
-			line-height: 105.66px;
+			font-size: 75px;
+			font-weight: bold;
+			/* line-height: 105.66px; */
 			text-align: left;
 			margin: 0;
 		}
 
 	h2 {
 		font-family: Raleway;
-		font-size: 80px;
+		font-size: 64px;
 		font-weight: 400;
-		line-height: 93.92px;
+		line-height: 85px;
 		text-align: left;
     color: #916FF0;
     margin: 0;
 	}
   .hello {
     font-family: Raleway;
-		font-size: 40px;
+		font-size: 31px;
 		font-weight: 700;
 		line-height: 46.96px;
 		text-align: left;
@@ -41,19 +45,51 @@ const WelcomeBody = styled.div`
   }
   .tagLine {
     font-family: Raleway;
-    font-size: 40px;
+    font-size: 31px;
     font-weight: 400;
-    line-height: 47px;
+    /* line-height: 47px; */
     letter-spacing: 0em;
     text-align: left;
     margin: 0;
+    /* width: 70% */
   }
-  img {
-    box-shadow: 45px -45px #916FF0
+
+  #profilePicture {
+    box-shadow: 25px -25px #916FF0;
+    width: 400px;
   }
-	/* @media only screen and (max-width: 900px) {
-		display: none;
-	} */
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+    margin-top: 10vh;
+
+    .imageSide {
+      visibility: hidden;
+      width: 0%;
+    }
+
+    .intro {
+      width: 100%;
+      padding-left: 20px;
+    }
+
+  	h1 {
+			font-size: 40px;
+		}
+
+    h2 {
+      font-size: 30px;
+      line-height: 44px;
+    }
+
+    .hello {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .tagLine {
+      font-size: 18px;
+    }
+  }
 `;
 
 const Welcome = () => {
@@ -68,7 +104,7 @@ const Welcome = () => {
           <p className='tagLine'>lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum</p>
         </div>
         <div className='imageSide'> 
-          <img src={myPicture} alt="image of Me" width={475}></img>
+          <img src={myPicture} alt="image of Me" id="profilePicture" ></img>
         </div>
 			</WelcomeBody>
 		</>

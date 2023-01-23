@@ -14,24 +14,27 @@ const NavBody = styled.div`
 	height: 80px;
 	h4 {
 			font-family: Sen;
-			font-size: 50px;
+			font-size: 40px;
 			font-weight: 400;
 			line-height: 60px;
 			letter-spacing: 0em;
 			text-align: left;
 
 			margin: 0;
-			padding: 10px 0px 0px 56px; 
+			padding: 20px 0px 0px 56px; 
 
 		}
 	h5 {
 		font-family: Raleway;
-		font-size: 30px;
-		font-weight: 500;
+		font-size: 22px;
+		font-weight: 650;
 		line-height: 35px;
 		letter-spacing: 0em;
 		text-align: center;
 
+		:hover {
+			border-bottom: 3px solid white;
+		}
 	}
 	ul {
 		display: flex;

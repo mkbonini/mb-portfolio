@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import Navbar from './components/Navbar';
 import Welcome from './components/Welcome';
+import About from './components/About'
 
 const AppContainer = styled.div`
 	/* max-height: 100vh; */
@@ -14,6 +15,7 @@ function App() {
 		<AppContainer>
 			<Navbar />
 			<Welcome />
+			<About />
 		</AppContainer>
 	);
 }
