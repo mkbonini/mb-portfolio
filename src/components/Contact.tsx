@@ -75,6 +75,9 @@ const ContactBody = styled.div`
     .contactText{
       margin: 0;
     }
+    h3{
+      font-size: 25px;
+    }
   }
 `;
 

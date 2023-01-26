@@ -19,7 +19,7 @@ type ProjectProps = {
 const ProjectCardBody = styled.div`
   background-color: black;
   display: flex;
-  box-shadow: #916FF0 0px 2px 8px 0px;
+  box-shadow: #352367 0px 2px 8px 2px;
 
   h6 {
     font-family: Montserrat;
@@ -32,8 +32,9 @@ const ProjectCardBody = styled.div`
   }
   p {
     display: inline;
-    font-family: Montserrat;
+    font-family: 'Open Sans';
     color: lightgrey;
+    font-size: 17px
   }
 
   a {
@@ -41,11 +42,11 @@ const ProjectCardBody = styled.div`
     text-decoration: none;
   }
   .projectDetails {
-    padding: 0px 0px 0px 25px;
+    padding: 25px;
     margin: auto;
   }
   .projectImage {
-    height: 200px;
+    height: 250px;
   }
   .subTitle {
     font-weight: bold;
@@ -53,10 +54,6 @@ const ProjectCardBody = styled.div`
   }
   @media only screen and (max-width: 600px) {
     flex-direction: column;
-
-    .projectDetails {
-      padding: 25px 20px 25px 25px;
-    }
 	}
 `;
 
@@ -106,7 +103,10 @@ const ProjectBody = styled.div`
 			margin-bottom: 40px;
 		}
   @media only screen and (max-width: 600px) {
-
+    width: 90vw;
+    h3{
+      font-size: 25px;
+    }
 	}
 `;
 

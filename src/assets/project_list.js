@@ -24,7 +24,7 @@ export const projectList =
   {
     "name": "Throne Room",
     "tech": "Ruby on Rails, PostgreSQL, Javascript, SQL, GitHub Projects",
-    "description": "An appliaction for finding and rating public restrooms.  a team project split into front-end and back-end to communicating through APIs.",
+    "description": "An application for finding and rating public restrooms.  a team project split into front-end and back-end to communicating through APIs.",
     "github": "https://github.com/mkbonini/The-Throne-Room",
     "url": "https://throne-room-app.fly.dev/",
     "image": throneImage
@@ -32,7 +32,7 @@ export const projectList =
   {
     "name": "Let's Jam!",
     "tech": "Python, flask, SQLAlchemy, Marshmallow, Postman",
-    "description": "A site for muscians to find nearby each other based on similar genres or by what instruments they play.  Created by a team using an agile workflow utliizing sprints and retros.",
+    "description": " A site for musicians to find nearby each other based on similar genres or by what instruments they play. Created by a team using an agile workflow utilizing sprints and retros.",
     "github": "https://github.com/mkbonini/letsjamBE",
     "url": "https://letsjam-fe-1.vercel.app/",
     "image": jamImage

@@ -7,7 +7,7 @@ const WelcomeBody = styled.div`
 	display: block;
 	display: flex;
 	justify-content: space-evenly;
-  margin-top: 30vh;
+  padding-top: 30vh;
   /* margin-bottom: 10vh; */
 	/* height: 80px; */
   .intro {
@@ -60,10 +60,19 @@ const WelcomeBody = styled.div`
   }
   @media screen and (max-width: 600px) {
     justify-content: center;
-    margin-top: 10vh;
+    padding-top: 15vh;
+    flex-direction: column;
+    width: 90vw;
+
 
     .imageSide {
-      display: none;
+      /* display: none; */
+      width: unset;
+      margin: auto;
+    }
+    #profilePicture {
+      width: 225px;
+      margin-top: 10vh;
     }
     .intro {
       width: 100%;
@@ -99,7 +108,7 @@ const Welcome = () => {
           <p className='hello'>Hello, I'm</p>
           <h1>Michael Bonini</h1>
           <h2>Software Engineer</h2>
-          <p className='tagLine'>lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum</p>
+          <p className='tagLine'>Skilled at thinking outside the box and approaching problems with a fresh line of thinking.</p>
         </div>
         <div className='imageSide'> 
           <img src={myPicture} alt="image of Me" id="profilePicture" ></img>

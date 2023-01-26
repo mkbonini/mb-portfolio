@@ -19,7 +19,10 @@ const ResumeBody = styled.div`
 			margin: 0px 0px 5vh 0px;
 		}
   @media screen and (max-width: 600px) {
-
+    width: 90%;
+    h3{
+      font-size: 25px;
+    }
   }
 `;
 
