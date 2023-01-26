@@ -1,5 +1,5 @@
 /** @format */
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import styled from 'styled-components';
 
 const AboutBody = styled.div`
@@ -10,11 +10,9 @@ const AboutBody = styled.div`
   margin-top: 14vh;
   /* margin-bottom: 10vh; */
   /* width: 80vw */
-  
-  #about {
-    width: 80vw;
-    margin: auto;
-   }
+  width: 80vw;
+  margin: auto;
+
 	h3 {
 			font-family: Raleway;
 			font-size: 31px;

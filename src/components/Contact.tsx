@@ -83,7 +83,7 @@ const Contact = () => {
 	return (
 		<>
 			<ContactBody>
-        <h3>CONTACT</h3>
+        <h3 id='contact'>CONTACT</h3>
         <div className='contactDetails'>
           <h1>Thanks for viewing my portfolio!</h1>
           <h2>I'd love to chat.</h2>

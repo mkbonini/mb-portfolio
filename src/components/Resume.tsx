@@ -28,7 +28,7 @@ const Resume = () => {
 	return (
 		<>
 			<ResumeBody>
-        <h3>RESUME</h3>
+        <h3 id='resume'>RESUME</h3>
         <iframe
           title='mikes-resume'
           src={PDF}

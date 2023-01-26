@@ -119,7 +119,7 @@ const Projects = () => {
 	return (
 		<>
 			<ProjectBody>
-        <h3>MY PROJECTS</h3>
+        <h3 id='projects'>MY PROJECTS</h3>
         <ul>{projects}</ul>
       </ProjectBody>
 		</>

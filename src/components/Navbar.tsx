@@ -1,11 +1,9 @@
 /** @format */
-import React,{ useState, useEffect } from 'react';
+import React,{ useState, useEffect, useRef } from 'react';
 // import { Route, Switch, Link, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
-// import Projects from '../views/Projects';
-// import Resume from '../views/Resume';
-// import Contact from '../views/Contact';
-// import Home from '../views/Home';
+import { Link } from "react-scroll";
+
 
 const NavBody = styled.div`
 	display: block;
@@ -63,12 +61,6 @@ const NavBody = styled.div`
 		text-decoration: none;
 	}
 
-	.scrolled{
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: lightblue;
-}
 	@media only screen and (max-width: 900px) {
 		display: none;
 	}
@@ -135,10 +127,14 @@ const Navbar = () => {
 					<FlyoutMenu>
 						<ul>
 							<li >
-								<h5>Projects</h5>
+								<Link activeClass="active" smooth spy to="projects">
+									<h5 >Projects</h5>
+								</Link>
 							</li>
 							<li>
-								<h5>About</h5>
+								<Link activeClass="active" smooth spy to="about">
+									<h5 >About</h5>
+								</Link>
 							</li>
 							<li>
 								<h5>Resume</h5>
@@ -156,16 +152,24 @@ const Navbar = () => {
 				</div>
 				<ul>
 					<li >
-						<h5>Projects</h5>
+						<Link activeClass="active" smooth spy to="projects">
+							<h5>Projects</h5>
+						</Link>
 					</li>
 					<li>
-						<h5>About</h5>
+						<Link activeClass="active" smooth spy to="about">
+							<h5>About</h5>
+						</Link>
 					</li>
 					<li>
-						<h5>Resume</h5>
+						<Link activeClass="active" smooth spy to="resume">
+							<h5>Resume</h5>
+						</Link>
 					</li>
 					<li >
-						<h5>Contact</h5>
+						<Link activeClass="active" smooth spy to="contact">
+							<h5>Contact</h5>
+						</Link>
 					</li>
 				</ul>
 			</NavBody>
