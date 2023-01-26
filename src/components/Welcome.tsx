@@ -7,7 +7,7 @@ const WelcomeBody = styled.div`
 	display: block;
 	display: flex;
 	justify-content: space-evenly;
-  margin-top: 25vh;
+  margin-top: 30vh;
   /* margin-bottom: 10vh; */
 	/* height: 80px; */
   .intro {

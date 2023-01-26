@@ -1,17 +1,18 @@
 /** @format */
-import { useState } from 'react';
-import { Route, Switch, Link, useHistory } from 'react-router-dom';
+import React,{ useState, useEffect } from 'react';
+// import { Route, Switch, Link, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
-import Projects from '../views/Projects';
-import Resume from '../views/Resume';
-import Contact from '../views/Contact';
-import Home from '../views/Home';
+// import Projects from '../views/Projects';
+// import Resume from '../views/Resume';
+// import Contact from '../views/Contact';
+// import Home from '../views/Home';
 
 const NavBody = styled.div`
 	display: block;
 	display: flex;
 	justify-content: space-between;
 	height: 80px;
+
 	h4 {
 			font-family: Sen;
 			font-size: 40px;
@@ -21,7 +22,7 @@ const NavBody = styled.div`
 			text-align: left;
 
 			margin: 0;
-			padding: 20px 0px 0px 56px; 
+			padding: 12px 0px 0px 56px; 
 
 		}
 	h5 {
@@ -43,7 +44,7 @@ const NavBody = styled.div`
 		align-items: center;
 		list-style-type: none;
 		margin: 0;
-		padding: 0;
+		padding: 0px 50px 0px 0px;
 	}
 	li {
 		min-width: 70px;
@@ -61,6 +62,13 @@ const NavBody = styled.div`
 	a {
 		text-decoration: none;
 	}
+
+	.scrolled{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+}
 	@media only screen and (max-width: 900px) {
 		display: none;
 	}
@@ -68,6 +76,7 @@ const NavBody = styled.div`
 
 const MobileNav = styled.div`
 	display: none;
+	/* position: fixed; */
 	@media only screen and (max-width: 900px) {
 		display: block;
 		display: flex;
@@ -109,7 +118,6 @@ const FlyoutMenu = styled.div`
 `;
 
 const Navbar = () => {
-	const history = useHistory();
 	const [clicked, setClicked] = useState(false);
 
 	const toggleClicked = () => {
@@ -126,37 +134,17 @@ const Navbar = () => {
 				{clicked && (
 					<FlyoutMenu>
 						<ul>
-							<li
-								onClick={() => {
-									history.push('/');
-									setClicked(false);
-								}}
-							>
-								<Link to='/'>Home</Link>
+							<li >
+								<h5>Projects</h5>
 							</li>
-							<li
-								onClick={() => {
-									history.push('/projects');
-									setClicked(false);
-								}}
-							>
-								<Link to='/projects'>Projects</Link>
+							<li>
+								<h5>About</h5>
 							</li>
-							<li
-								onClick={() => {
-									history.push('/resume');
-									setClicked(false);
-								}}
-							>
-								<Link to='/resume'>Resume</Link>
+							<li>
+								<h5>Resume</h5>
 							</li>
-							<li
-								onClick={() => {
-									history.push('/contact');
-									setClicked(false);
-								}}
-							>
-								<Link to='/contact'>Contact</Link>
+							<li >
+								<h5>Contact</h5>
 							</li>
 						</ul>
 					</FlyoutMenu>
@@ -181,20 +169,6 @@ const Navbar = () => {
 					</li>
 				</ul>
 			</NavBody>
-			{/* <Switch>
-				<Route exact path='/'>
-					<Home />
-				</Route>
-				<Route path='/projects'>
-					<Projects />
-				</Route>
-				<Route path='/resume'>
-					<Resume />
-				</Route>
-				<Route path='/contact'>
-					<Contact />
-				</Route>
-			</Switch> */}
 		</>
 	);
 };
