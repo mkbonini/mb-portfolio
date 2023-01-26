@@ -1,15 +1,8 @@
 /** @format */
-import { useState } from 'react';
 import styled from 'styled-components';
 
 const FooterBody = styled.div`
-	/* display: block; */
-	/* display: flex; */
-  /* flex-direction: column */
-	/* justify-content: center; */
   padding-top: 10vh;
-  /* margin-bottom: 10vh; */
-  /* width: 80vw */
   background-color: #210E59;
 	p {
 			font-family: Raleway;

@@ -1,5 +1,4 @@
 /** @format */
-import { useState } from 'react';
 import styled from 'styled-components';
 const PDF = require('../assets/resume.pdf');
 

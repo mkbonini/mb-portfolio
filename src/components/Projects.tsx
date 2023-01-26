@@ -1,10 +1,6 @@
 /** @format */
-import { useState } from 'react';
 import styled from 'styled-components';
 import {projectList} from '../assets/project_list';
-// import weddingImage from '../assets/wedding.png'
-// import { data } from '../assets/project_list';
-
 
 type ProjectProps = {
   name: string;
@@ -25,7 +21,6 @@ const ProjectCardBody = styled.div`
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 700;
-    /* line-height: 60px; */
     text-align: left;
     margin: 0px 0px 5px 0px;
 

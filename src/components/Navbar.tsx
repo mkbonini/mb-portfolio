@@ -1,10 +1,7 @@
 /** @format */
-import React,{ useState, useEffect, useRef } from 'react';
-// import { Route, Switch, Link, useHistory } from 'react-router-dom';
+import React,{ useState,} from 'react';
 import styled from 'styled-components';
 import { Link } from "react-scroll";
-import * as Scroll from 'react-scroll';
-
 
 const NavBody = styled.div`
 	height: 80px;
@@ -18,20 +15,15 @@ const NavBody = styled.div`
 			line-height: 60px;
 			letter-spacing: 0em;
 			text-align: left;
-
 			margin: 0;
-			/* padding: 12px 0px 0px 56px;  */
-
 		}
 	ul {
 		display: flex;
 		justify-content: flex-end;
-		/* width: 100vw; */
 		align-items: center;
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		/* padding: 0px 50px 0px 0px; */
 		gap: 20px
 	}
 	li {
@@ -42,8 +34,6 @@ const NavBody = styled.div`
 		line-height: 35px;
 		letter-spacing: 0em;
 		text-align: center;
-		/* height: 100%; */
-		/* padding: 20px; */
 		display: flex;
 		justify-content: center;
 		align-items: center;

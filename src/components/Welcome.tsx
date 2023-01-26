@@ -1,5 +1,4 @@
 /** @format */
-import { useState } from 'react';
 import styled from 'styled-components';
 import myPicture from '../assets/michael.png'
 
@@ -8,8 +7,7 @@ const WelcomeBody = styled.div`
 	display: flex;
 	justify-content: space-evenly;
   padding-top: 30vh;
-  /* margin-bottom: 10vh; */
-	/* height: 80px; */
+
   .intro {
     width: 40vw;
   }
