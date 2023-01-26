@@ -37,8 +37,8 @@ const ProjectCardBody = styled.div`
     text-decoration: none;
   }
   .projectDetails {
-    padding: 25px;
-    margin: auto;
+    padding: 35px;
+    /* margin: auto 0px; */
   }
   .projectImage {
     height: 250px;
@@ -49,6 +49,22 @@ const ProjectCardBody = styled.div`
   }
   @media only screen and (max-width: 600px) {
     flex-direction: column;
+    .projectDetails {
+      padding: 25px;
+      margin: auto;
+    }
+	}
+
+  @media only screen and (max-width: 2000px) {
+    .projectDetails {
+      padding: 20px;
+    }
+	}
+
+  @media only screen and (min-width: 2600px) {
+    .projectImage {
+      height: 300px;
+    }
 	}
 `;
 
