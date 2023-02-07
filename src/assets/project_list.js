@@ -18,7 +18,7 @@ export const projectList =
     "tech": "React.js, Material UI, Rechart",
     "description": "A front-end dashboard to view responses from the wedding website. The app makes API calls to the backend and displays them using react with javascript components.",
     "github": "https://github.com/mkbonini/wedding_dashboard",
-    "url": "https://wedding-dashboard-nhdhfrhti-mkbonini.vercel.app/",
+    "url": "https://wedding-dashboard.vercel.app/",
     "image": dashboardImage
   },
   {
