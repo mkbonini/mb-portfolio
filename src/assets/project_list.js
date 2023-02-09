@@ -10,7 +10,7 @@ export const projectList =
     "tech": "Ruby on Rails, PostgreSQL, GitHub Projects",
     "description": "A full stack application that allows guests to see details and RSVP to my upcoming wedding. My part as the back-end engineer was to create a postgres database to store wedding invite responses. The backend also connects guests details to their lodging selection, plus-ones, and kids.  Provides automated email communication as well as a complete set of RESTful API endpoints.",
     "github": "https://github.com/mkbonini/wedding_backend",
-    "url": "https://mikemiwha.love/",
+    "url": "https://wedding-public.vercel.app/",
     "image": weddingImage
   },
   {
