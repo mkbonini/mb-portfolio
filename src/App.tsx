@@ -25,6 +25,7 @@ const AppContainer = styled.div`
 function App() {
 	return (
 		<AppContainer>
+			<link rel="preload" as="image" href="michael_800w.webp" imageSrcSet="michael_400w.webp 400w, michael_800w.webp 800w"></link>
 			<Navbar />
 			<Welcome />
 			<hr />
