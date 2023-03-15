@@ -1,7 +1,11 @@
-import weddingImage from './wedding.png'
-import dashboardImage from './dashboard.png'
-import throneImage from './throne.png'
-import jamImage from './jam.png'
+// import weddingImage from './wedding.png'
+// import dashboardImage from './dashboard.png'
+// import throneImage from './throne.png'
+// import jamImage from './jam.png'
+import weddingImage from './wedding_1080w.webp'
+import dashboardImage from './dashboard_1080w.webp'
+import throneImage from './throne_1080w.webp'
+import jamImage from './jam_1080w.webp'
 
 export const projectList = 
 [
