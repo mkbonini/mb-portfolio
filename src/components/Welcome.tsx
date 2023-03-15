@@ -115,7 +115,8 @@ const Welcome = () => {
           id="profilePicture" 
           alt="image of Me" 
           srcSet={`${myPicture_450w} 450w, ${myPicture_800w} 800w`} 
-          sizes="(max-width: 600px) 480px, 800px"
+          sizes="(min-width: 620px) 400px, 225px"
+          src={myPicture_800w}
           />
         </div>
 			</WelcomeBody>
