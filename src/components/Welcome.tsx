@@ -1,6 +1,7 @@
 /** @format */
 import styled from 'styled-components';
-import myPicture from '../assets/michael.png'
+import myPicture_450w from '../assets/michael_450w.webp'
+import myPicture_800w from '../assets/michael_800w.webp'
 
 const WelcomeBody = styled.div`
 	display: block;
@@ -109,7 +110,13 @@ const Welcome = () => {
           <p className='tagLine'>Skilled at thinking outside the box and approaching problems with a fresh line of thinking.</p>
         </div>
         <div className='imageSide'> 
-          <img src={myPicture} alt="image of Me" id="profilePicture" ></img>
+          {/* <img srcSet="../assets/michael_450w.webp , ../assets/michael_800w.webp 2x" alt="image of Me" id="profilePicture" ></img> */}
+          <img 
+          id="profilePicture" 
+          alt="image of Me" 
+          srcSet={`${myPicture_450w} 450w, ${myPicture_800w} 800w`} 
+          sizes="(max-width: 600px) 480px, 800px"
+          />
         </div>
 			</WelcomeBody>
 		</>
